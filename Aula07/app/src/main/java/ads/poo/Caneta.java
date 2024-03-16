@@ -3,10 +3,46 @@ package ads.poo;
 public class Caneta {
     
     // Atributos 
-    private String cor = "preto";
-    private int unidadeTinta = 100 ;
+    private String cor ;
+    private int unidadeTinta ;
 
-    // Métodos 
+    public Caneta(String cor, int unidadeTinta) {
+        this.cor = cor;
+        this.unidadeTinta = unidadeTinta;
+    }
+
+    public Caneta(String cor){
+//        this.unidadeTinta = 100;
+//        this.cor = cor;
+        this( cor, 100);
+    }
+
+    @Override
+    public String toString() {
+        return "Caneta{" +
+                "cor='" + cor + '\'' +
+                ", unidadeTinta=" + unidadeTinta +
+                '}';
+    }
+
+    public Caneta(){
+//        this.unidadeTinta = 100 ;
+//        this.cor = "vermelha";
+        this("vemelha", 100);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    // Métodos
 
     public String usandoCaneta(){
         if (unidadeTinta>0){

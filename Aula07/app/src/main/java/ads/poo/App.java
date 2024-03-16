@@ -1,8 +1,36 @@
 package ads.poo;
 
+import org.checkerframework.checker.units.qual.C;
+
 public class App {
     
     public static void main(String[] args){
+
+//        Caneta bic = new Caneta("azul" , 100 );
+//
+//        Caneta pilot = new Caneta("preta");
+//
+//        Caneta red = new Caneta();
+//
+//
+//        System.out.println(red);
+
+
+        Carro del = new Carro();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //     Buzz b = new Buzz();
 
@@ -22,11 +50,5 @@ public class App {
     // public static void main(String[] args){
     //     Caneta c = new Caneta();
     //     c.setCor("verde");
-        Pessoa Juca = new Pessoa();
-        Juca.setCpf("035.365.569-00");
-        Juca.setEmail("juca@gmail.com");
-        Juca.setName("Juca Pato");
-        System.out.println(Juca);
-
     }
 }

@@ -7,15 +7,15 @@ public class Pessoa {
     private String email ;
 
 
-    // Método 
-    
+    // Método
+
     public String getCpf() {
         return cpf;
     }
 
     @Override
     public String toString() {
-        return "Pessoa [cpf=" + cpf + ", name=" + name + ", email=" + email + "]";
+        return "Pessoa [\ncpf=" + cpf + ", \nname=" + name + ", \nemail=" + email + "]";
     }
 
     public void setCpf(String cpf) {
@@ -32,6 +32,11 @@ public class Pessoa {
     }
     public void setEmail(String email) {
         this.email = email;
-    } 
+    }
 
+    public Pessoa(String cpf, String name, String email) {
+        this.cpf = cpf;
+        this.name = name;
+        this.email = email;
+    }
 }
