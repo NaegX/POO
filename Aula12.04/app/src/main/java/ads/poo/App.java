@@ -68,11 +68,15 @@ public class App {
     }
 
 
+    private void excluir(){
+        String matricula ="123";
 
-
-
-
-
+        if (this.bancoDeDados.remove(matricula) == null){
+            System.out.println("Não encontrado");
+        }else{
+            System.out.println("Removido com sucesso");
+        }
+    }
 
 
 
