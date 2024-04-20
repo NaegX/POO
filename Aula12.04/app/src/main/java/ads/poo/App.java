@@ -10,93 +10,227 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class App {
-    Scanner teclado = new Scanner(System.in);
-    private HashMap<String, Aluno> bancoDeDados;
-    private Object alunos;
+//     // Scanner teclado = new Scanner(System.in);
+//     // private HashMap<String, Aluno> bancoDeDados;
+//     // private Object alunos;
     
-    public App(){
-        this.bancoDeDados = new HashMap<>();
-    }
+//     // public App(){
+//     //     this.bancoDeDados = new HashMap<>();
+//     // }
 
-    private int menu(){
-        int opcao = 0;
-        System.out.println("..:: SIGAA 2 ::.."); 
-        System.out.println("Entre com a opção desejada");
-        System.out.println("1 - Cadastrar");
-        System.out.println("2 - Editar");
-        System.out.println("3 - Excluir");
-        System.out.println("4 - Listar dados de um aluno");
-        System.out.println("5 - Listar todos os dados");
-        System.out.println("6 - Sair");
-        opcao = teclado.nextInt();
-        teclado.nextLine();
-        return opcao;
-    }
+//     // private int menu(){
+//     //     int opcao = 0;
+//     //     System.out.println("..:: SIGAA 2 ::.."); 
+//     //     System.out.println("Entre com a opção desejada");
+//     //     System.out.println("1 - Cadastrar");
+//     //     System.out.println("2 - Editar");
+//     //     System.out.println("3 - Excluir");
+//     //     System.out.println("4 - Listar dados de um aluno");
+//     //     System.out.println("5 - Listar todos os dados");
+//     //     System.out.println("6 - Sair");
+//     //     opcao = teclado.nextInt();
+//     //     teclado.nextLine();
+//     //     return opcao;
+//     }
 
-    private void listarTodos(){
-        System.out.println(this.alunos);
-    }
+//     // private void listarTodos(){
+//     //     System.out.println(this.alunos);
+//     }
 
-    private boolean cadastrar(){
-        System.out.println("Entre com nome :");
-        String nome = teclado.nextLine();
-        System.out.println("Entre com a matrícula :");
-        String matricula = teclado.nextLine();
-        System.out.println("Entre com o curso :");
-        String curso = teclado.nextLine();
-        System.out.println("Entre com seu telefone :");
-        String telefone = teclado.nextLine();
-        System.out.println("Entre com seu email :");
-        String email = teclado.nextLine();
-        System.out.println("Entre com sua data de nascimento :");
-        String dataString = teclado.nextLine();
-        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        LocalDate data = LocalDate.parse(dataString, formato);
+//     // private boolean cadastrar(){
+//     //     System.out.println("Entre com seu email :");
+//     //     String email = teclado.nextLine();
+//     //     System.out.println("Entre com sua data de nascimento :");
+//     //     String dataString = teclado.nextLine();
+//     //     DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//     //     LocalDate data = LocalDate.parse(dataString, formato);
         
-    }
+//     }
 
-    private boolean cadastrar(){
-        String matricula = "123";
-        Aluno a = new Aluno("Juca", matricula, "Ads", "48", "juca@ee", LocalDate.of(2000, 10, 2));
-        return this.alunos.app(a);
+//     // private boolean cadastrar(){
+//     //     String matricula = "123";
+//     //     Aluno a = new Aluno("Juca", matricula, "Ads", "48", "juca@ee", LocalDate.of(2000, 10, 2));
+//     //     return this.alunos.app(a);
 
-        if(this.bancoDeDados.containsKey(matricula)){
-            this.bancoDeDados.put(matricula, a);
-            return true;
-        }
-        return false;
-    }
+//     //     if(this.bancoDeDados.containsKey(matricula)){
+//     //         this.bancoDeDados.put(matricula, a);
+//     //         return true;
+//     //     }
+//     //     return false;
+//     }
 
 
-    private void excluir(){
-        String matricula ="123";
+//     // private void excluir(){
+//     //     String matricula ="123";
 
-        if (this.bancoDeDados.remove(matricula) == null){
-            System.out.println("Não encontrado");
-        }else{
-            System.out.println("Removido com sucesso");
-        }
-    }
+//     //     if (this.bancoDeDados.remove(matricula) == null){
+//     //         System.out.println("Não encontrado");
+//     //     }else{
+//     //         System.out.println("Removido com sucesso");
+//     //     }
+//     }
+//    System.out.println("Entre com nome :");
+//     //     String nome = teclado.nextLine();
+//     //     System.out.println("Entre com a matrícula :");
+//     //     String matricula = teclado.nextLine();
+//     //     System.out.println("Entre com o curso :");
+//     //     String curso = tec    // Scanner teclado = new Scanner(System.in);
+//     // private HashMap<String, Aluno> bancoDeDados;
+//     // private Object alunos;
+    
+//     // public App(){
+//     //     this.bancoDeDados = new HashMap<>();
+//     // }
+
+//     // private int menu(){
+//     //     int opcao = 0;
+//     //     System.out.println("..:: SIGAA 2 ::.."); 
+//     //     System.out.println("Entre com a opção desejada");
+//     //     System.out.println("1 - Cadastrar");
+//     //     System.out.println("2 - Editar");
+//     //     System.out.println("3 - Excluir");
+//     //     System.out.println("4 - Listar dados de um aluno");
+//     //     System.out.println("5 - Listar todos os dados");
+//     //     System.out.println("6 - Sair");
+//     //     opcao = teclado.nextInt();
+//     //     teclado.nextLine();
+//     //     return opcao;
+//     }
+
+//     // private void listarTodos(){
+//     //     System.out.println(this.alunos);
+//     }
+
+//     // private boolean cadastrar(){
+//     //     System.out.println("Entre com seu email :");
+//     //     String email = teclado.nextLine();
+//     //     System.out.println("Entre com sua data de nascimento :");
+//     //     String dataString = teclado.nextLine();
+//     //     DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//     //     LocalDate data = LocalDate.parse(dataString, formato);
+        
+//     }
+
+//     // private boolean cadastrar(){
+//     //     String matricula = "123";
+//     //     Aluno a = new Aluno("Juca", matricula, "Ads", "48", "juca@ee", LocalDate.of(2000, 10, 2));
+//     //     return this.alunos.app(a);
+
+//     //     if(this.bancoDeDados.containsKey(matricula)){
+//     //         this.bancoDeDalado.nextLine();
+//     //     System.out.println("Entre com seu telefone :");
+//     //     String telefone = teclado.nextLine();
+//     //     System.out.println("Entre com seu email :");
+//     //     String email = teclado.nextLine();
+//     //     System.out.println("Entre com sua data de nascimento :");
+//     //     String dataString = teclado.nextLine();
+//     //     DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//     //     LocalDate data = LocalDate.parse(dataString, formato);
+        
+//     }
+
+//     // private boolean cadastrar(){
+//     //     String matricula = "123";
+//     //     Aluno a = new Aluno("Juca", matricula, "Ads", "48", "juca@ee", LocalDate.of(2000, 10, 2));
+//     //     return this.alunos.app(a);
+
+//     //     if(this.bancoDeDados.containsKey(matricula)){
+//     //         this.bancoDeDados.put(matricula, a);
+//     //         return true;
+//     //     }
+//     //     return false;
+//     }
+
+
+//     // private void excluir(){
+//     //     String matricula ="123";
+
+//     //     if (this.bancoDeDados.remove(matricula) == null){
+//     //         System.out.println("Não encontrado");
+//     //     }else{
+//     //         System.out.println("Removido com sucesso");
+//     //     }
+//     }
 
 
 
     
     public static void main(String[] args) {
-        App app = new App()
-        int opcao;
+        // App app = new App()
+        // int opcao;
 
-        do {
-            opcao=app.menu();
+        // do {
+        //     opcao=app.menu();
 
-            switch(opcao) {
-                case 1 -> System.out.println("Cadastrando");
-                case 2 -> System.out.println("Editando");
-                case 3 -> System.out.println("Excluindo");
-                case 4 -> System.out.println("Listando dados");
-                case 5 -> System.out.println("Listando alunos");
-                default -> System.out.println("Opção inválida");
+        //     switch(opcao) {
+        //         case 1 -> System.out.println("Cadastrando");
+        //         case 2 -> System.out.println("Editando");
+        //         case 3 -> System.out.println("Excluindo");
+        //         case 4 -> System.out.println("Listando dados");
+        //         case 5 -> System.out.println("Listando alunos");
+        //         default -> System.out.println("Opção inválida");
+        //     }
+        // } while (opcao!=6);
+
+        // int i = 10;
+        // String s ="poo";
+        
+        //vetor, array , arranjo
+        // int[] v = new int[10];
+        // String [] nomes = new String[10]; // tamanho estático
+        // ArrayList<String> n = new ArrayList<>(); // dinâmica 
+        // ArrayList<Integer> arrayList = new ArrayList<>(); // Integer é uma classe para números inteiros
+        
+        // String gambiarra = "Nome Sobrenome 10/10/2000";
+        // Pessoa w = new Pessoa("W", "SW" , LocalDate.of(2000,10,10));
+
+        // Pessoa p = new Pessoa("Nome","Sobrenome",LocalDate.of(200, 10, 10));
+
+        ArrayList<Pessoa> banco = new ArrayList<>();
+
+        Pessoa p = new Pessoa("Pedro", "Sobrenome", LocalDate.of(2000, 10, 10));
+        new Pessoa("W" , "SW" , LocalDate.of(2001, 3, 13));
+
+
+
+        HashMap<String, Pessoa> tabela = new HashMap<>();
+        // banco.add(p);
+
+        // banco.add(new Pessoa("Outra" , "ouoe" , LocalDate.of(2002, 05, 12)));
+
+        // p.setNome("Jonas");
+
+        // banco.get(2).setNome("Ana");
+
+        // System.out.println(p.getNome()); //Pedro
+        // banco.add(p);
+        // System.out.println(banco.get(0).getNome()); // Pedro
+
+        // p.setNome("Juca");
+
+        // System.out.println(p.getNome()); // Pedro
+
+
+        boolean achou = false;
+        for (Pessoa elemento : banco){
+            if (elemento.getNome().equals("Pedro")){
+                achou =true;
+                break;
             }
-        } while (opcao!=6);
-            
-    }
+        }
+       
+        tabela.put(p.getNome(), p )
+
+        Pessoa o = new Pessoa("Pedro", "Outro", LocalDate.of(199, 10, 10));
+
+        Pessoa resultado = tabela.put(p.getNome() , p);
+
+        if (!tabela.containsKey(o.getNome())){
+            resultado = tabela.put(o.getNome(),o); // p
+        }
+
+
+
+
+        }
 }
