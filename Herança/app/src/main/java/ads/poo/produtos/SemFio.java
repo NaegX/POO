@@ -18,5 +18,30 @@ public class SemFio extends Telefone {
         
         return super.imprimirDados() + "SemFio [frequencia=" + frequencia + ", canais=" + canais + ", distancia=" + distancia + "]";
     }
+
+    public double getFrequencia() {
+        return frequencia;
+    }
+
+    public void setFrequencia(double frequencia) {
+        this.frequencia = frequencia;
+    }
+
+    public int getCanais() {
+        return canais;
+    }
+
+    public void setCanais(int canais) {
+        this.canais = canais;
+    }
+
+    public double getDistancia() {
+        return distancia;
+    }
+
+    public void setDistancia(double distancia) {
+        this.distancia = distancia;
+    }
+ 
     
 }
