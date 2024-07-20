@@ -1,6 +1,8 @@
 package ads.poo;
 
-public class Aldeao extends Pessoa{
+public class Aldeao extends Pessoa 
+implements Guerreiro, Coletador{
+    
 
     public Aldeao(double vida, double ataque, double velocidade) {
         super(vida, ataque, velocidade);
@@ -15,13 +17,19 @@ public class Aldeao extends Pessoa{
     @Override
     public String ataque() {
         // TODO Auto-generated method stub
-        return "Eu sou um Aldeao e" + super.ataque();
+        return "Eu sou um Aldeao e" ;
     }
 
     @Override
     public String mover() {
         // TODO Auto-generated method stub
-        return "Eu sou um Aldeao e" + super.mover();
+        return "Eu sou um Aldeao e" ;
     }
     
+    public String coletarMadeira(){
+        return "Colentando madeira";
+    }
+    public String coletarOuro(){
+        return "Coletando Ouro";
+    }
 }

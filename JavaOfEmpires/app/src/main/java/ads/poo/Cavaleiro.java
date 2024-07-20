@@ -1,6 +1,7 @@
 package ads.poo;
 
-public class Cavaleiro extends Pessoa{
+public class Cavaleiro extends Pessoa 
+implements Guerreiro{
 
     public Cavaleiro(double vida, double ataque, double velocidade) {
         super(vida, ataque, velocidade);
@@ -15,13 +16,13 @@ public class Cavaleiro extends Pessoa{
     @Override
     public String ataque() {
         // TODO Auto-generated method stub
-        return "Eu sou um Cavaleiro e " + super.ataque();
+        return "Eu sou um Cavaleiro e " ;
     }
 
     @Override
     public String mover() {
         // TODO Auto-generated method stub
-        return "Eu sou um Cavaleiro e " + super.mover();
+        return "Eu sou um Cavaleiro e " ;
     }
 
     

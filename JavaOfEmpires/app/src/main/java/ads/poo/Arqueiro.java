@@ -1,6 +1,7 @@
 package ads.poo;
 
-public class Arqueiro extends Pessoa{
+public class Arqueiro extends Pessoa 
+implements Guerreiro{
 
     public Arqueiro(double vida, double ataque, double velocidade) {
         super(vida, ataque, velocidade);
@@ -15,13 +16,13 @@ public class Arqueiro extends Pessoa{
     @Override
     public String ataque() {
         // TODO Auto-generated method stub
-        return "Eu sou um Arqueiro e " + super.ataque();
+        return "Eu sou um Arqueiro e " ;
     }
 
     @Override
     public String mover() {
         // TODO Auto-generated method stub
-        return "Eu sou um Arqueiro e " + super.mover();
+        return "Eu sou um Arqueiro e " ;
     }
     
     

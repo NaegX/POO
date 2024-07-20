@@ -6,17 +6,23 @@ package ads.poo;
 public class App {
         public static void main (String[] args){
     
-        Aldeao aldeao = new Aldeao( 25, 1 , 0.8);
-        Arqueiro  arqueiro  = new Arqueiro(35, 2, 1);
-        Cavaleiro cavaleiro = new Cavaleiro(50, 3, 2);
+        // Aldeao aldeao = new Aldeao( 25, 1 , 0.8);
+        // Arqueiro  arqueiro  = new Arqueiro(35, 2, 1);
+        // Cavaleiro cavaleiro = new Cavaleiro(50, 3, 2);
 
-        System.out.println(aldeao.ataque());
-        System.out.println(aldeao.mover());
+        // System.out.println(aldeao.ataque());
+        // System.out.println(aldeao.mover());
 
-        System.out.println(arqueiro.ataque());
-        System.out.println(arqueiro.mover());
+        // System.out.println(arqueiro.ataque());
+        // System.out.println(arqueiro.mover());
 
-        System.out.println(cavaleiro.ataque());
-        System.out.println(cavaleiro.mover());
+        // System.out.println(cavaleiro.ataque());
+        // System.out.println(cavaleiro.mover());
+
+        Pessoa p = new Soldado(50, 15, 5);
+
+        System.out.println(p.ataque());
     }
+
+
 }

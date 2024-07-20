@@ -4,11 +4,9 @@
 package ads.poo;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        Ponto p = new Ponto("vermelho", 2, 3);
+        Linha l = new Linha("marrom", Ponto(), p);
+        
     }
 }

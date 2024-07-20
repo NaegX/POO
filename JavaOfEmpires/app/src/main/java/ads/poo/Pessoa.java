@@ -1,6 +1,6 @@
 package ads.poo;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     private double vida;
     private double ataque;
@@ -37,10 +37,6 @@ public class Pessoa {
     @Override
     public String toString() {
         return "Pessoa [vida=" + vida + ", ataque=" + ataque + ", velocidade=" + velocidade + "]";
-    }
-
-    public String ataque() {
-        return "estou atacando";
     }
 
     public String mover() {
